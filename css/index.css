@@ -1,0 +1,116 @@
+html, button {
+    font-size: 16px;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+body {
+    margin: 0;
+}
+.title-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:80px;
+}
+
+.title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.question-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:100px;
+}
+
+.question {
+    display:table-cell;
+    vertical-align:middle;
+    padding-left: 20px;
+}
+
+.answer-wrap {
+    position: relative;
+    width:100vw;
+    height:100%;
+}
+
+.answer {
+    padding: 10px;
+    font-weight: bold;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.controller-wrap {
+    display: table;
+    position: relative;
+    width:100vw;
+    height:70px;
+}
+
+.prev-btn {
+    width:50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.next-btn {
+    width:50%;
+    height: 100%;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background:red;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.prev-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height:100%;
+    background:yellow;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.next-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height:100%;
+    background:blue;
+    opacity: 0.1;
+    z-index: -1;
+}
