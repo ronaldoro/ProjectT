@@ -10,9 +10,9 @@
 //import Header from './components/layout/Header.vue'
 
 export default {
-  name: 'App',
+  name: 'Home',
   components: {
-    //Header
+   //Header
   }
 }
 </script>
