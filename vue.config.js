@@ -1,4 +1,6 @@
 module.exports = {
-    publicPath: '/ProjectT-psychological/tree/master/docs/',
+    publicPath: process.env.NODE_ENV === 'production'
+    ? 'https://github.com/ronaldoro/ProjectT-psychological/'
+    : '/',
     outputDir: 'docs'
 }
