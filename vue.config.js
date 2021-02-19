@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: '/ProjectT-psychological/docs/',
+    publicPath: '/ProjectT-psychological/tree/master/docs/',
     outputDir: 'docs'
 }
