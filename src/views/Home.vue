@@ -9,6 +9,12 @@
         <div>
             <button class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
         </div>
+
+        <div class = "adText">
+            광고 문의<br>
+            wnsh3131@naver.com<br>
+            All Right Reserved. 2021. J&S.<br>
+        </div>
     </div>
 </template>
 
@@ -102,7 +108,7 @@ export default {
     padding:1rem;
 
     margin-top:2rem;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12pt;
@@ -126,5 +132,14 @@ export default {
 }
 .answer2Brush {
   background-color: #FFD1B7;
+}
+
+.adText {
+    text-align: center;
+    padding-bottom: 10rem;
+
+    font-size: 12pt;
+    font-family: serif;
+    opacity: 0.6;
 }
 </style>
