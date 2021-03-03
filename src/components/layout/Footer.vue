@@ -1,17 +1,17 @@
 <template>
-  <div class="HeaderSection">
-    역휘는 광고칸
+  <div class="FooterSection">
+    역휘도 광고칸
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Footer',
 }
 </script>
 
 <style scoped>
-.HeaderSection{
+.FooterSection{
     background-color: #f5e728;
     text-align: center;
 

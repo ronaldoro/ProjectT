@@ -27,7 +27,7 @@ export default {
         answer1() {
             let integerAnswer = parseInt(this.answerIndex, 10);
             integerAnswer += 1;
-            if(integerAnswer > 10) {
+            if(integerAnswer > 5) {
                 this.$router.push({path:'about'})
             }
 
@@ -39,7 +39,7 @@ export default {
         answer2() {
             let integerAnswer = parseInt(this.answerIndex, 10);
             integerAnswer += 1;
-            if(integerAnswer > 10) {
+            if(integerAnswer > 5) {
                 this.$router.push({path:'about'})
             }
 
@@ -59,6 +59,14 @@ export default {
 
 
 <style scoped>
+.HeaderSection{
+    background-color: #7728f5;
+}
+
+.FooterSection{
+    background-color: #7728f5;
+}
+
 .HomebackGround{
     background-color: #FFAFE6;
 }
