@@ -72,13 +72,13 @@ export default {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 3rem;
-    font-family:cursive
+    font-family:serif
 }
 
 .answerNonvisual {
-    left: 30%;
+    left: 15%;
     position:relative;
-    width:40%;
+    width:70%;
     height:100%;
     padding:1rem;
 
@@ -87,9 +87,9 @@ export default {
 }
 
 .answer2Nonvisual {
-    left: 30%;
+    left: 15%;
     position:relative;
-    width:40%;
+    width:70%;
     height:100%;
     padding:1rem;
 
