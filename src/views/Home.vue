@@ -7,7 +7,7 @@
             <button class="answerNonvisual answerPen answerBrush" type="button" @click="answer1">{{answerString1}}</button>  
         </div>
         <div>
-            <button class="answer2Nonvisual answerPen" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
+            <button class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
         </div>
     </div>
 </template>
@@ -83,7 +83,7 @@ export default {
     padding:1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 .answer2Nonvisual {
@@ -97,7 +97,7 @@ export default {
     margin-bottom: 20rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 .answerPen {
