@@ -56,7 +56,7 @@ export default {
 .Title{
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 
     font-size: 20pt;
     font-family:serif
@@ -72,9 +72,9 @@ export default {
 }
 
 .startNonvisual {
-    left: 20%;
+    left: 27.5%;
     position:relative;
-    width:60%;
+    width:45%;
     height:100%;
     padding:1rem;
 
