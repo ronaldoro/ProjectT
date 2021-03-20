@@ -57,6 +57,8 @@ export default {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
+
+    font-size: 20pt;
     font-family:serif
 }
 
@@ -70,9 +72,9 @@ export default {
 }
 
 .startNonvisual {
-    left: 35%;
+    left: 20%;
     position:relative;
-    width:30%;
+    width:60%;
     height:100%;
     padding:1rem;
 
@@ -96,10 +98,10 @@ export default {
 }
 
 .imageLogo {
-    left: 30%;
+    left: 7.5%;
     position:relative;
-    width:40%;
-    height:30%;
+    width:85%;
+    height:65%;
 
 }
 
