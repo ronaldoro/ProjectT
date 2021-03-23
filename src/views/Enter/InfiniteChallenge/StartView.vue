@@ -4,15 +4,15 @@
             MBTI로 알아보는<br>
         </div>
         <div>
-            <h1 class="Title">내가 무한도전 멤버라면 ?</h1>
+            <h1 v-bind:style="{opacity:opacity}" class="Title">내가 무한도전 멤버라면 ?</h1>
         </div>
 
         <div>
-            <img class="imageLogo" src="./../../../assets/EnterResource/startLogo.png">
+            <img v-bind:style="{opacity:opacity}" class="imageLogo" src="./../../../assets/EnterResource/startLogo.png">
         </div>
 
         <div>
-            <button class="startNonvisual startPen startBrush" type="button" @click="start" @mouseover="over2">테스트 시작</button>
+            <button v-bind:style="{opacity:opacity}" class="startNonvisual startPen startBrush" type="button" @click="start">테스트 시작</button>
         </div>
 
         
@@ -29,14 +29,33 @@
 export default {
     data() {
         return {
+            opacity: "0.1",
             answerIndex: "1",
             answerString1: "1-1번 답변을 선택합니다.",
         }
     },
+
+    created() {
+        this.startTransParency()
+    },
+
     methods: {
         start() {
             this.$router.push({path:'InfiniteChallenge_Question'})
         },
+
+        startTransParency: function() {
+            setTimeout(() => {
+                var test = parseFloat(this.opacity);
+                test += 0.05
+                this.opacity = String(test)    
+
+                if(test < 1.1) {
+                    this.startTransParency()
+                }
+
+            }, 50);
+        }
     }
     
 }
@@ -56,9 +75,9 @@ export default {
 .Title{
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 
     font-size: 20pt;
+    font-weight: bold;
     font-family:serif
 }
 
@@ -89,7 +108,7 @@ export default {
     border:thistle;
     outline-width: 2rem;
     border-radius: 1rem;
-    
+    font-weight:700;
     color: #F2F2F2;
 }
 
@@ -98,10 +117,12 @@ export default {
 }
 
 .imageLogo {
+    padding-top: 5rem;
     left: 7.5%;
     position:relative;
     width:85%;
     height:65%;
+    opacity: 0.1;
 
 }
 

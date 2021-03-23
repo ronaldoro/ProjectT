@@ -1,6 +1,5 @@
 <template>
   <div class="HeaderSection">
-    역휘는 광고칸
   </div>
 </template>
 
@@ -15,6 +14,6 @@ export default {
     background-color: #f5e728;
     text-align: center;
 
-    font-size: 16pt;
+    font-size: 0pt;
 }
 </style>
