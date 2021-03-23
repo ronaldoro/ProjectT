@@ -30,13 +30,17 @@ export default {
     data() {
         return {
             opacity: "0",
-            answerIndex: "1",
-            answerString1: "1-1번 답변을 선택합니다.",
         }
     },
 
     created() {
-        this.startTransParency()
+        
+    },
+
+    mounted: function () {
+        this.$nextTick(function () {
+            this.startTransParency()    
+        })
     },
 
     methods: {
