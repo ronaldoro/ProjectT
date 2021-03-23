@@ -29,7 +29,7 @@
 export default {
     data() {
         return {
-            opacity: "0.1",
+            opacity: "0",
             answerIndex: "1",
             answerString1: "1-1번 답변을 선택합니다.",
         }
@@ -47,7 +47,7 @@ export default {
         startTransParency: function() {
             setTimeout(() => {
                 var test = parseFloat(this.opacity);
-                test += 0.05
+                test += 0.045
                 this.opacity = String(test)    
 
                 if(test < 1.1) {
@@ -117,7 +117,6 @@ export default {
 }
 
 .imageLogo {
-    padding-top: 5rem;
     left: 7.5%;
     position:relative;
     width:85%;
