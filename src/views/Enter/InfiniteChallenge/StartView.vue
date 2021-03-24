@@ -40,11 +40,7 @@ export default {
     },
 
     mounted: function () {
-        window.addEventListener('load', () => {
-            this.startTransParency()
-        })
-
-        this.startTransParency()
+        window.addEventListener('load', this.startTransParency())
     },
 
     methods: {
@@ -72,6 +68,7 @@ export default {
 
             }, 50);
         },
+
     }
     
 }
