@@ -3,7 +3,7 @@
         <div>
             <h1 v-bind:style="{opacity:opacity}" class="Title">Q1.</h1>
         </div>
-        <div class="qustionText">
+        <div v-bind:style="{opacity:opacity}" class="qustionText">
             오늘은 녹화날!<br>
             나는 프로그램에서 어떤 역할을 하게 될까?
         </div>
@@ -13,10 +13,10 @@
         </div>
 
         <div>
-            <button class="answerNonvisual answerPen answerBrush" type="button" @click="answer1">{{answerString1}}</button>  
+            <button v-bind:style="{opacity:opacity}" class="answerNonvisual answerPen answerBrush" type="button" @click="answer1">{{answerString1}}</button>  
         </div>
         <div>
-            <button class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
+            <button v-bind:style="{opacity:opacity}" class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
         </div>
 
 
@@ -39,9 +39,15 @@ export default {
             questionString: "1번 질문입니다.",
             answerString1: "내가 중심이 되어 프로그램을 이끌어 가야지!",
             answerString2: "재밌는 리액션으로 감초 역할을 하고싶어!",
-            answerClass: "answerNonvisual answerPen"
+            answerClass: "answerNonvisual answerPen",
+            opacity: "1",
         }
     },
+
+    created: function () {
+        this.startTransParency()
+    },
+
     methods: {
         answer1() {
             let integerAnswer = parseInt(this.answerIndex, 10);
@@ -68,9 +74,19 @@ export default {
             this.answerString2 = this.answerIndex + "-2번 답변을 선택합니다."
         },
 
-        over2() {
-            
+        startTransParency: function() {
+            setTimeout(() => {
+                var opacity = parseFloat(this.opacity);
+                opacity += 0.045
+                this.opacity = String(opacity)    
+
+                if(opacity < 1.1) {
+                    this.startTransParency()
+                }
+
+            }, 50);
         },
+        
     }
     
 }
@@ -83,7 +99,7 @@ export default {
 }
 
 .Title{
-    padding-left: 15%;
+    padding-left: 10%;
     padding-top: 1rem;
 
     font-size: 20pt;
@@ -92,8 +108,7 @@ export default {
 }
 
 .qustionText{
-    padding-left: 15%;
-    padding-top: 1rem;
+    padding-left: 10%;
 
     font-size: 16pt;
     font-weight: bold;
@@ -101,11 +116,11 @@ export default {
 }
 
 .qustionImage {
-    left: 15%;
+    left: 10%;
     padding-top: 1rem;
     position:relative;
-    width:70%;
-    height:55%;
+    width:80%;
+    height:65%;
 
 }
 
@@ -131,7 +146,7 @@ export default {
     padding:1rem;
 
     margin-top:2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12pt;
@@ -159,7 +174,7 @@ export default {
 
 .adText {
     text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 
     font-size: 12pt;
     font-family: serif;
