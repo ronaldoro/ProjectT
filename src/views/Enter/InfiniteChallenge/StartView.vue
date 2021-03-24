@@ -1,7 +1,8 @@
 <template>
     <div class="HomebackGround">
-        <div class = "subTitle">
-            MBTI로 알아보는<br>
+        <div v-bind:style="{opacity:subOpacity}" class = "subTitle">
+            MBTI로 알아보는
+            <br>
         </div>
         <div>
             <h1 v-bind:style="{opacity:opacity}" class="Title">내가 무한도전 멤버라면 ?</h1>
@@ -29,18 +30,21 @@
 export default {
     data() {
         return {
+            subOpacity: "0",
             opacity: "0",
         }
     },
 
     created() {
-        
+
     },
 
     mounted: function () {
         window.addEventListener('load', () => {
             this.startTransParency()
         })
+
+        this.startTransParency()
     },
 
     methods: {
@@ -50,16 +54,24 @@ export default {
 
         startTransParency: function() {
             setTimeout(() => {
-                var test = parseFloat(this.opacity);
-                test += 0.045
-                this.opacity = String(test)    
+                var opacity = parseFloat(this.opacity);
+                opacity += 0.045
+                this.opacity = String(opacity)    
 
-                if(test < 1.1) {
+                var subOpacity = parseFloat(this.subOpacity);
+                subOpacity += 0.04
+                if(subOpacity > 0.6) {
+                    subOpacity = 0.6
+                }
+
+                this.subOpacity = String(subOpacity)    
+
+                if(opacity < 1.1) {
                     this.startTransParency()
                 }
 
             }, 50);
-        }
+        },
     }
     
 }
@@ -91,7 +103,6 @@ export default {
 
     font-size: 16pt;
     font-family: serif;
-    opacity: 0.6;
 }
 
 .startNonvisual {
