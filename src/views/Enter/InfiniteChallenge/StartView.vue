@@ -38,8 +38,8 @@ export default {
     },
 
     mounted: function () {
-        this.$nextTick(function () {
-            this.startTransParency()    
+        window.addEventListener('load', () => {
+            this.startTransParency()
         })
     },
 
