@@ -1,8 +1,10 @@
 <template>
   <div class="FooterSection">
     <div>
+      <a href="https://hikidssports.modoo.at/">
         <img class="AdImageTemplate1" src="./../../assets/AdResource/HIKIDSSPORTS_LOGO.jpg">
         <img class="AdImageTemplate2" src="./../../assets/AdResource/HIKIDSSPORTS_LOGO2.jpg">
+      </a>
     </div>
   </div>
 </template>

@@ -5,7 +5,8 @@
         </div>
         <div class="qustionText">
             오늘은 녹화날!<br>
-            나는 프로그램에서 어떤 역할을 하게 될까?
+            나는 프로그램에서 <br>
+            어떤 역할을 하게 될까?
         </div>
 
         <div>
@@ -100,7 +101,7 @@ export default {
     padding:1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .answer2Nonvisual {
@@ -114,7 +115,7 @@ export default {
     margin-bottom: 1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 .answerPen {
