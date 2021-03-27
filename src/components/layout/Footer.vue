@@ -1,6 +1,11 @@
 <template>
   <div class="FooterSection">
-    역휘도 광고칸
+    <div>
+      <a href="https://hikidssports.modoo.at/">
+        <img class="AdImageTemplate1" src="./../../assets/AdResource/HIKIDSSPORTS_LOGO.jpg">
+        <img class="AdImageTemplate2" src="./../../assets/AdResource/HIKIDSSPORTS_LOGO2.jpg">
+      </a>
+    </div>
   </div>
 </template>
 
@@ -16,5 +21,15 @@ export default {
     text-align: center;
 
     font-size: 16pt;
+}
+
+.AdImageTemplate1{
+  width: 75%;
+  height: 4rem;
+}
+
+.AdImageTemplate2{
+  width: 25%;
+  height: 4rem;
 }
 </style>

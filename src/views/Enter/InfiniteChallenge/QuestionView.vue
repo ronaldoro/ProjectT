@@ -1,22 +1,22 @@
 <template>
     <div class="HomebackGround">
         <div>
-            <h1 v-bind:style="{opacity:opacity}" class="Title">Q1.</h1>
+            <h1 class="Title">Q1.</h1>
         </div>
-        <div v-bind:style="{opacity:opacity}" class="qustionText">
+        <div class="qustionText">
             오늘은 녹화날!<br>
             나는 프로그램에서 어떤 역할을 하게 될까?
         </div>
 
         <div>
-            <img v-bind:style="{opacity:opacity}" class="qustionImage" src="./../../../assets/EnterResource/Infinite_Question1.jpg">
+            <img class="qustionImage" src="./../../../assets/EnterResource/Infinite_Question1.jpg">
         </div>
 
         <div>
-            <button v-bind:style="{opacity:opacity}" class="answerNonvisual answerPen answerBrush" type="button" @click="answer1">{{answerString1}}</button>  
+            <button class="answerNonvisual answerPen answerBrush" type="button" @click="answer1">{{answerString1}}</button>  
         </div>
         <div>
-            <button v-bind:style="{opacity:opacity}" class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
+            <button class="answer2Nonvisual answerPen answer2Brush" type="button" @click="answer2" @mouseover="over2">{{answerString2}}</button>
         </div>
 
 
@@ -44,48 +44,7 @@ export default {
         }
     },
 
-    created: function () {
-        this.startTransParency()
-    },
-
     methods: {
-        answer1() {
-            let integerAnswer = parseInt(this.answerIndex, 10);
-            integerAnswer += 1;
-            if(integerAnswer > 5) {
-                this.$router.push({path:'about'})
-            }
-
-            this.answerIndex = integerAnswer;
-            this.questionString = this.answerIndex + "번 질문입니다."
-            this.answerString1 = this.answerIndex + "-1번 답변을 선택합니다."
-            this.answerString2 = this.answerIndex + "-2번 답변을 선택합니다."
-        },
-        answer2() {
-            let integerAnswer = parseInt(this.answerIndex, 10);
-            integerAnswer += 1;
-            if(integerAnswer > 5) {
-                this.$router.push({path:'about'})
-            }
-
-            this.answerIndex = integerAnswer;
-            this.questionString = this.answerIndex + "번 질문입니다."
-            this.answerString1 = this.answerIndex + "-1번 답변을 선택합니다."
-            this.answerString2 = this.answerIndex + "-2번 답변을 선택합니다."
-        },
-
-        startTransParency: function() {
-            setTimeout(() => {
-                var opacity = parseFloat(this.opacity);
-                opacity += 0.045
-                this.opacity = String(opacity)    
-
-                if(opacity < 1.1) {
-                    this.startTransParency()
-                }
-
-            }, 50);
-        },
         
     }
     
@@ -154,9 +113,12 @@ export default {
 
 .answerPen {
   border:thistle;
-  outline-style: dotted;
+
   outline-width: 2px;
-  border-radius: 5px;
+  border-radius: 2rem;
+  
+  font-weight:700;
+  color: #F2F2F2;
 }
 
 .answerOverPen {
@@ -166,10 +128,10 @@ export default {
   border-radius: 5px;
 }
 .answerBrush {
-  background-color: #FFEFD5;
+  background-color: #595959;
 }
 .answer2Brush {
-  background-color: #FFD1B7;
+  background-color: #595959;
 }
 
 .adText {
