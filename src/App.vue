@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <div id="content" class="content">
+      <meta property="og:title" content="ogTest Content!!">
+      <meta property="og:description" content="og description Test Content!!">
       <Header></Header>
       <router-view></router-view>
       <Footer></Footer>
