@@ -110,7 +110,7 @@ export default {
     padding:1rem;
 
     margin-top:2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18pt;
@@ -139,7 +139,7 @@ export default {
 
 .adText {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 
     font-size: 12pt;
     font-family: serif;

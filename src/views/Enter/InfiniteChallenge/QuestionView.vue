@@ -84,9 +84,9 @@ export default {
 }
 
 .answerNonvisual {
-    left: 15%;
+    left: 10%;
     position:relative;
-    width:70%;
+    width:80%;
     height:100%;
 
     margin-top:2rem;
@@ -98,9 +98,9 @@ export default {
 }
 
 .answer2Nonvisual {
-    left: 15%;
+    left: 10%;
     position:relative;
-    width:70%;
+    width:80%;
     height:100%;
     padding:1rem;
 
@@ -136,7 +136,7 @@ export default {
 
 .adText {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 
     font-size: 12pt;
     font-family: serif;
