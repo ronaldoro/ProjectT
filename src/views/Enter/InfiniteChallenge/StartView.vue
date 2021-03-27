@@ -139,6 +139,7 @@ export default {
 
 .adText {
     text-align: center;
+    padding-top:1rem;
     padding-bottom: 1rem;
 
     font-size: 12pt;

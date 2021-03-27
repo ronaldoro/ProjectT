@@ -4,8 +4,7 @@
             <h1 class="Title">Q1.</h1>
         </div>
         <div class="qustionText">
-            오늘은 녹화날!<br>
-            나는 프로그램에서 <br>
+            오늘은 녹화날! 나는 프로그램에서<br>
             어떤 역할을 하게 될까?
         </div>
 
@@ -47,11 +46,11 @@ export default {
 
     methods: {
         downQuestionBtn: function() {
-            this.answerString2 = "downQuestionBtn!!!"
+            this.answerString2 = "downQuestionBtn Debug Test"
         },
 
         upQuestionBtn: function() {
-            this.answerString2 = "upQuestionBtn!!!"
+            this.answerString2 = "upQuestionBtn Debug Test"
         },
     }
     
@@ -143,6 +142,7 @@ export default {
 
 .adText {
     text-align: center;
+    padding-top:1rem;
     padding-bottom: 1rem;
 
     font-size: 12pt;
