@@ -24,12 +24,12 @@ export default {
 }
 
 .AdImageTemplate1{
-  width: 75%;
+  width: 65%;
   height: 4rem;
 }
 
 .AdImageTemplate2{
-  width: 25%;
+  width: 35%;
   height: 4rem;
 }
 </style>
