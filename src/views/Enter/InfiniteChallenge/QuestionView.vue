@@ -18,7 +18,7 @@
         </div>
         <div>
             <button class="answer2Nonvisual answerPen answer2Brush" type="button"
-                @mouseup="upQuestionBtn" @mousedown="downQuestionBtn">{{questionList}}</button>
+                @mouseup="upQuestionBtn" @mousedown="downQuestionBtn">{{answerString2}}</button>
         </div>
 
 
