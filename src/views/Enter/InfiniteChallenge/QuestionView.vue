@@ -18,7 +18,7 @@
         </div>
         <div>
             <button class="answer2Nonvisual answerPen answer2Brush" type="button"
-                @mouseup="upQuestionBtn" @mousedown="downQuestionBtn">{{answerString2}}</button>
+                @mouseup="upQuestionBtn" @mousedown="downQuestionBtn">{{questionList}}</button>
         </div>
 
 
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import QuestionAPI from './QuestionAPI/QuestionAPI.vue'
+
 export default {
     data() {
         return {
@@ -41,12 +43,28 @@ export default {
             answerString2: "재밌는 리액션으로 감초 역할을 하고싶어!",
             answerClass: "answerNonvisual answerPen",
             opacity: "1",
+
+            questionList: [["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 1
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 2
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 3
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 4
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 5
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 6
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 7
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 8
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 9
+            ["내가 중심이 되어", "재밌는 리액션으로"], // Qustion 10
+            ["내가 중심이 되어-11", "재밌는 리액션으로-11"], // Qustion 11
+            ["내가 중심이 되어-12", "재밌는 리액션으로-12"]], // Qustion 12
         }
     },
 
     methods: {
         downQuestionBtn: function() {
             this.answerString2 = "downQuestionBtn Debug Test"
+
+            alert(QuestionAPI.data.answerIndex)
+            
         },
 
         upQuestionBtn: function() {

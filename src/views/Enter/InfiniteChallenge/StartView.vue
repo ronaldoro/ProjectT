@@ -109,7 +109,6 @@ export default {
     height:100%;
     padding:1rem;
 
-    margin-top:2rem;
     margin-bottom: 1rem;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
