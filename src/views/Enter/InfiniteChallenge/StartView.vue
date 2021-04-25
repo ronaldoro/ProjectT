@@ -9,17 +9,14 @@
         </div>
 
         <div>
-            <img v-bind:style="{opacity:opacity}" class="imageLogo" src="./../../../assets/EnterResource/startLogo.png">
+            <img v-bind:style="{opacity:opacity}" class="imageLogo" src="./../../../assets/EnterResource/Infinite/startLogo.png">
         </div>
 
         <div>
             <button v-bind:style="{opacity:opacity}" class="startNonvisual startPen startBrush" type="button" @click="start">테스트 시작</button>
         </div>
 
-        
-
         <div class = "adText">
-            광고 문의<br>
             wnsh3131@naver.com<br>
             All Right Reserved. 2021. J&S.<br>
         </div>
