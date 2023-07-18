@@ -13,7 +13,7 @@
         <div class = "adText">
             광고 문의<br>
             wnsh3131@naver.com<br>
-            All Right Reserved. 2021. J&S.<br>
+            All Right Reserved. 2021. J.<br>
         </div>
     </div>
 </template>
