@@ -18,7 +18,7 @@
 
         <div class = "adText">
             wnsh3131@naver.com<br>
-            All Right Reserved. 2021. J&S.<br>
+            All Right Reserved. 2021. Junho.<br>
         </div>
     </div>
 </template>
